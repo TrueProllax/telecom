@@ -1,0 +1,374 @@
+body *{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding-top: 90px;
+  /* position: relative; */
+
+  width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+img{
+  max-width: 800px;
+}
+ul{
+  list-style: none;
+}
+.color1{
+  color: #024b75;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container h1{
+  font-size: 42px;
+}
+.container p{
+  font-size: 20px;
+}
+/* Голова............................................................ */
+header{
+  background-color: #45a1d6;
+  padding: 0;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr; */
+}
+.header > ul > li:not(:last-child){
+  margin-right: 50px;
+}
+.logo a{
+text-align: center;
+display: flex;
+align-items: center;
+}
+.logo img{
+width: 100px;
+}
+.header a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.bgboot a:hover{
+  border-bottom: 1px solid #fff;
+}
+.header p{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+/* Новости.......................................................... */
+.news{
+  text-align: center;
+}
+.news li{
+  margin: 25px auto 25px;
+
+  border: 2px solid #333;
+  border-radius: 0 15px 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.picture{
+  max-width: 100%;
+}
+.picture img{
+  max-width: 100%;
+  height: 100%;
+}
+.post h2{
+  text-align: left;
+  padding: 5px;
+}
+.post p{
+  text-align: left;
+  padding: 5px;
+  font-size: 19px
+}
+.news h1{
+  margin-top:15px;
+}
+.post a{
+  text-decoration: none;
+  color: #000;
+}
+.pictuce a{
+  padding: 0
+}
+.post{
+  width: 100%;
+}
+.sleng{
+  padding: 3px 7px
+}
+.nextNews a{
+  border: 1px solid #024b75;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #024b75;
+  padding: 5px 18px;
+  font-size: 18px;
+}
+.sleng a{
+  color:#024b75;
+  border-bottom: 1px solid #024b75;
+}
+/* НОГИ................................................................... */
+footer{
+  background-color: #000;
+  padding: 25px 0 10px;
+  border-top: 2px solid #000;
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+}
+.footer{
+  text-align: center;
+}
+.footer > h2{
+  color: #fff;
+}
+.fix{
+  position: fixed;
+}
+
+/* Авторизация.............................................................. */
+.authorization .text{
+  text-align: left;
+  max-width: 487px;
+  margin: 0 auto;
+}
+.authorization h2{
+  margin-bottom: 12px;
+}
+.authorization form{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  max-width: 900px;
+  margin-bottom: 15px
+}
+.authorization input{
+  max-width: 210px
+}
+.authorization p{
+  text-align: right;
+}
+.authorization a{
+  border: 1px solid #024b75;
+  text-decoration: none;
+  color: #024b75;
+  padding: 5px 0;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  /* max-width: 400px; */
+  justify-content: center;
+  align-items: center;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Тарифы................................................................................................. */
+.tariff{
+  text-align: center;
+}
+.tariff h1{
+  text-align: center;
+  margin: 10px auto 15px;
+}
+.tariff a{
+  border: 1px solid #024b75;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #024b75;
+}
+.blockTariff {
+  border: 2px solid #333;
+  border-radius: 8px;
+
+}
+.blockTariff li{
+  padding: 3px
+}
+.tariff > ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.blockTariff h2{
+  padding: 5px 0 15px;
+  background-color: #45a1d6;
+  border-bottom: 2px solid #333;
+}
+.blockTariff a{
+  padding: 2px 50px 5px;
+  font-size: 17px;
+}
+.blockTariff p{
+  text-align: left;
+  padding: 11px 0 10px 50px;
+  font-size: 17px;
+}
+.blockTariff .speedIT{
+  background-image: url(../img/internet.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+.blockTariff .TV{
+  background-image: url(../img/TV.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+.blockTariff .cinematins{
+  background-image: url(../img/cinema.svg);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+.lastLink{
+  margin-bottom: 10px;
+}
+/* Заявканапобежду.................................................................... */
+.request{
+  text-align: center;
+}
+.request form{
+align-items: center;
+display: flex;
+flex-direction:column;
+
+}
+.request textarea{
+  resize: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.request select{
+  /* width: 200px */
+  margin: 5px 0 7px;
+  width: 250px;
+  font-size: 20px;
+}
+.request input{
+margin: 7px 0 0;
+color: #024b75;
+padding: 3px 10px;
+border: 1px solid #024b75;
+border-radius: 3px;
+font-size: 18px;
+}
+/* Подключение....................................................................... */
+.connection{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em
+}
+.connection li{
+  margin: 5px 0;
+  list-style-type: none;
+}
+.connection h2{
+  text-align: center;
+}
+/* .connectTariff{
+  height: 500px;
+} */
+.bid{
+  text-align: right;
+}
+.bid input{
+  width: 343px;
+  height: 35px;
+  margin: 2px 0;
+  font-size: 20px;
+}
+.bid .but{
+  color: #024b75;
+  border: 1px solid #024b75;
+  border-radius: 5px;
+
+}
+.bid p{
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+/* Персональные данные.................................................................. */
+.profile{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ /* align-items: center; */
+}
+.profile input{
+  width: 150px;
+  font-size: 18px;
+  padding-left: 3px; 
+}
+.PersonDate input{
+  margin: 2px 3px 2px 0;
+  font-size: 21px;
+}
+.profile h1{
+  font-size: 42px;
+}
+.profile .Address{
+  width: 307px;
+}
+.threeLine input{
+  width: 304px;
+}
+.passwordProfile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.passwordProfile input{
+  width: 260px;
+  margin: 2px 0;
+  font-size: 21px;
+}
+.profile .upText{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile a{
+  text-decoration: none;
+  color: #024b75;
+  font-size: 20px;
+}
+.SubmitProfile{
+  color: #024b75;
+  border: 1px solid #024b75;
+  border-radius: 3px;
+  font-size: 18px;
+}
