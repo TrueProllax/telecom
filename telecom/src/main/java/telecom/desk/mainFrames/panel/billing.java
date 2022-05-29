@@ -82,6 +82,7 @@ public class billing extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(850, 700));
 
         jPanel1.setBackground(new java.awt.Color(236, 238, 248));
+        jPanel1.setMinimumSize(new java.awt.Dimension(850, 700));
         jPanel1.setPreferredSize(new java.awt.Dimension(850, 700));
 
         lButton1.setText("Платежи");

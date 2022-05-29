@@ -112,7 +112,7 @@ public class registration extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        dispose();
+        setVisible(false);
     }//GEN-LAST:event_jLabel2MouseClicked
 
     public static void main(String args[]) {

@@ -36,6 +36,22 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
 	</dependency>
         
+        <!-- for web site -->
+        
+        <dependency>
+	<groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+	</dependency>
+                
+        <!-- connect with bd -->
+                
+<!--        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>-->
+        
         <!-- Swing -->
         
         <dependency>
@@ -130,11 +146,4 @@
 	</plugins>
     </build>
     <name>telecom</name>
-    <repositories>
-        <repository>
-            <id>unknown-jars-temp-repo</id>
-            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
-            <url>file:${project.basedir}/lib</url>
-        </repository>
-    </repositories>
 </project>

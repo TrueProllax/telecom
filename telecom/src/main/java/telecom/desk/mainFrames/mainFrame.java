@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Component;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import telecom.desk.authorization.authorization;
 import telecom.desk.constants.SystemColor;
 import static telecom.desk.constants.SystemColor.Theme;
 import static telecom.desk.constants.SystemColor.*;
@@ -45,6 +46,10 @@ public class mainFrame extends javax.swing.JFrame {
                     case 5:
                         showPanel(crm);
                         break;
+                    case 7:
+                        new authorization().setVisible(true);
+                        dispose();
+                        break;
                 }
             }
         };
@@ -71,11 +76,11 @@ public class mainFrame extends javax.swing.JFrame {
 
         switchPanel = new javax.swing.JLayeredPane();
         abonent = new telecom.desk.mainFrames.panel.abonent();
-        active = new telecom.desk.mainFrames.panel.active();
-        crm = new telecom.desk.mainFrames.panel.crm();
-        billing = new telecom.desk.mainFrames.panel.billing();
         controll = new telecom.desk.mainFrames.panel.controll();
+        billing = new telecom.desk.mainFrames.panel.billing();
+        active = new telecom.desk.mainFrames.panel.active();
         support = new telecom.desk.mainFrames.panel.support();
+        crm = new telecom.desk.mainFrames.panel.crm();
         panelMenu = new telecom.desk.swing.LPanel();
         menu = new telecom.desk.mainFrames.menu.Menu();
         jLabel1 = new javax.swing.JLabel();
@@ -83,16 +88,16 @@ public class mainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1100, 700));
+        setPreferredSize(new java.awt.Dimension(1140, 700));
 
         switchPanel.setBackground(new java.awt.Color(255, 255, 255));
         switchPanel.setLayout(new java.awt.CardLayout());
-        switchPanel.add(abonent, "card7");
-        switchPanel.add(active, "card4");
-        switchPanel.add(crm, "card7");
-        switchPanel.add(billing, "card7");
-        switchPanel.add(controll, "card6");
+        switchPanel.add(abonent, "card2");
+        switchPanel.add(controll, "card4");
+        switchPanel.add(billing, "card5");
+        switchPanel.add(active, "card6");
         switchPanel.add(support, "card7");
+        switchPanel.add(crm, "card7");
 
         panelMenu.setPreferredSize(new java.awt.Dimension(250, 700));
 
@@ -113,7 +118,7 @@ public class mainFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMenuLayout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -140,8 +145,8 @@ public class mainFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(switchPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE)
-            .addComponent(panelMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE)
+            .addComponent(switchPanel)
+            .addComponent(panelMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 

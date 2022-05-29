@@ -24,6 +24,7 @@ public class support extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(850, 700));
 
         jPanel2.setBackground(new java.awt.Color(236, 238, 248));
+        jPanel2.setMinimumSize(new java.awt.Dimension(850, 700));
         jPanel2.setPreferredSize(new java.awt.Dimension(850, 700));
 
         lTable5.setModel(new javax.swing.table.DefaultTableModel(
@@ -90,9 +91,9 @@ public class support extends javax.swing.JPanel {
             .addGap(0, 850, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 0, 0)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGap(0, 0, 0)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

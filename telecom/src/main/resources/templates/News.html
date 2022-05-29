@@ -1,27 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>News</title>
+  
+  <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}"/>
+  <title th:text="${title}"/> 
+  
 </head>
 <body>
   <!-- Голова -->
-  <header>
-    <div class="container header">
-      <div class = "logo"><a href="News.html"><img src="img/logo.svg" alt="">Телеком Нева Связь</a></div>
-      <ul>
-        <li class = "bgboot"><a href="News.html">Новости</a></li>
-        <li class = "bgboot"><a href="Request.html">Заявка</a></li>
-        <li class = "bgboot"><a href="Tariff.html">Тарифы</a></li>
-        <li class = "bgboot"><a href="Authorization.html">Авторизация</a></li>
-      </ul>
-    <p>Гость</p>
-    </div>
-  </header>
+  
+  <header th:insert="fragments/header :: header"></header>
 
 
   <!-- Основа -->

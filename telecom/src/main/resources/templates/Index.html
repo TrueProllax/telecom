@@ -2,25 +2,15 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}"/>
   <title th:text="${title}"/> 
+  
 </head>
 <body>
     
   <!-- Голова -->
-  <header>
-    <div class="container header">
-      <div class = "logo"><a href="News.html"><img src="img/logo.svg" alt="">Телеком Нева Связь</a></div>
-      <ul>
-        <li class = "bgboot"><a href="News.html">Новости</a></li>
-        <li class = "bgboot"><a href="Request.html">Заявка</a></li>
-        <li class = "bgboot"><a href="Tariff.html">Тарифы</a></li>
-        <li class = "bgboot"><a href="Authorization.html">Авторизация</a></li>
-      </ul>
-    <p>Гость</p>
-    </div>
-  </header>
+  
+  <header th:insert="fragments/header :: header"></header>
 
 
   <!-- Основа -->
@@ -30,7 +20,7 @@
         <h1>Новости компании</h1>
         <ul class="post">
           <li>
-            <div class="picture"><a href=""><img src="img/news-1.jpg" alt=""></a></div>
+            <div class="picture"><a href=""><img src="img/news-1.jpg" alt="" th:src="@{news-1.jpg}"></a></div>
             <div class="sleng">
               <a href=""><h2  class="color1">Пока пока ростелеком</h2></a>
               <p>Наша компания выкупает ростелеком потомучто может себе это позволить так как мы не ставим запятые у нас накопилось много денег с печати и мы может позволить тратить деньги вообще мы не ставим никакие знаки по этому текст занимает меньше места на листе и мы экономим на этом <a href="">читать далее...</a></p>
@@ -38,7 +28,7 @@
           </li>
           <li>
             <div class="picture">
-            <a href=""><img src="img/news-2.jpg" alt=""></a>
+            <a href=""><img src="img/news-2.jpg" alt="" th:src="@{news-2.jpg}"></a>
             </div>
           <div class="sleng">
             <a href=""><h2  class="color1">Услуги не услуги</h2></a>
@@ -47,7 +37,7 @@
           </li>
           <li>
           <div class="picture">
-            <a href=""><img src="img/news-3.jpg" alt=""></a>
+            <a href=""><img src="img/news-3.jpg" alt="" th:src="@{news-3.jpg}"></a>
           </div>
           <div class="sleng">
             <a href=""><h2  class="color1">Заседание</h2></a>
@@ -61,8 +51,6 @@
       </div>
     </section>
   </main>
-
-
 
   <!-- Ноги -->
   <footer>

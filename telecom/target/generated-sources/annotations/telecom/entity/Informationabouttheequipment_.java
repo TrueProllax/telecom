@@ -8,7 +8,7 @@ import telecom.entity.Equipment;
 import telecom.entity.Ports;
 import telecom.entity.Typesofequipment;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-05-28T13:39:24", comments="EclipseLink-2.7.9.v20210604-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2022-05-28T17:30:09", comments="EclipseLink-2.7.9.v20210604-rNA")
 @StaticMetamodel(Informationabouttheequipment.class)
 public class Informationabouttheequipment_ { 
 

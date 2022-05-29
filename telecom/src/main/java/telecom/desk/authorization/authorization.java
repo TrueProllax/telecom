@@ -16,8 +16,11 @@ public class authorization extends javax.swing.JFrame {
 
     public boolean vis = false;
     
+    public registration reg;
+    
     public authorization() {
         initComponents();
+        setLocation(getX() * 2, getY());
         initElements();
         setBackground(new Color(0,0,0,0));
         this.mainPanel.setBackground(new Color(0,0,0,0));
@@ -34,6 +37,8 @@ public class authorization extends javax.swing.JFrame {
         lTextField1 = new telecom.desk.swing.LTextField();
         lTextField2 = new telecom.desk.swing.LTextField();
         lButton4 = new telecom.desk.swing.LButton();
+        lButton5 = new telecom.desk.swing.LButton();
+        jLabel1 = new javax.swing.JLabel();
         lPanelTriangle2 = new telecom.desk.swing.LPanelTriangle();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -78,6 +83,21 @@ public class authorization extends javax.swing.JFrame {
             }
         });
 
+        lButton5.setBackground(new java.awt.Color(0, 0, 153));
+        lButton5.setForeground(new java.awt.Color(255, 255, 255));
+        lButton5.setText("ВЫЙТИ");
+        lButton5.setBorderAdd(true);
+        lButton5.setBorderColor(new java.awt.Color(204, 204, 204));
+        lButton5.setCircleEffectAdd(true);
+        lButton5.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
+        lButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/logo.png"))); // NOI18N
+
         javax.swing.GroupLayout lPanelTriangle1Layout = new javax.swing.GroupLayout(lPanelTriangle1);
         lPanelTriangle1.setLayout(lPanelTriangle1Layout);
         lPanelTriangle1Layout.setHorizontalGroup(
@@ -85,31 +105,41 @@ public class authorization extends javax.swing.JFrame {
             .addGroup(lPanelTriangle1Layout.createSequentialGroup()
                 .addGroup(lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(lPanelTriangle1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(lPanelTriangle1Layout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addGroup(lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(lTextField1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lTextField2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE))
                             .addGroup(lPanelTriangle1Layout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addComponent(lButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(lTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(lPanelTriangle1Layout.createSequentialGroup()
-                        .addGap(241, 241, 241)
-                        .addComponent(lButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(282, Short.MAX_VALUE))
+                                .addGroup(lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(lButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+                                    .addComponent(lButton5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(121, 121, 121)
+                                .addComponent(lButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
         lPanelTriangle1Layout.setVerticalGroup(
             lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lPanelTriangle1Layout.createSequentialGroup()
-                .addContainerGap(275, Short.MAX_VALUE)
+                .addContainerGap(174, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(37, 37, 37)
                 .addComponent(lTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(lTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(lButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(lButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(207, 207, 207))
+                .addGroup(lPanelTriangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(lPanelTriangle1Layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(lButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(lPanelTriangle1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(lButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(202, 202, 202))
         );
 
         mainPanel.add(lPanelTriangle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 630));
@@ -153,14 +183,22 @@ public class authorization extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lButton3MouseClicked
-       new registration().setVisible(true);
-       
+       if (reg == null) {
+           reg = new registration();
+           reg.setVisible(true);
+       }  else{
+           reg.setVisible(true);
+       }
     }//GEN-LAST:event_lButton3MouseClicked
 
     private void lButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lButton4ActionPerformed
         new mainFrame().setVisible(true);
         dispose();
     }//GEN-LAST:event_lButton4ActionPerformed
+
+    private void lButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lButton5ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_lButton5ActionPerformed
 
     int xLocation;
     int yLocation;
@@ -182,8 +220,10 @@ public class authorization extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private telecom.desk.swing.LButton lButton3;
     private telecom.desk.swing.LButton lButton4;
+    private telecom.desk.swing.LButton lButton5;
     private telecom.desk.swing.LPanelTriangle lPanelTriangle1;
     private telecom.desk.swing.LPanelTriangle lPanelTriangle2;
     private telecom.desk.swing.LTextField lTextField1;

@@ -35,6 +35,7 @@ public class controll extends javax.swing.JPanel {
         lTable1 = new telecom.desk.swing.table.LTable();
         jLabel1 = new javax.swing.JLabel();
 
+        setMinimumSize(new java.awt.Dimension(850, 700));
         setPreferredSize(new java.awt.Dimension(850, 700));
 
         jPanel1.setBackground(new java.awt.Color(236, 238, 248));

@@ -32,7 +32,6 @@ telecom\entity\Technicalsupport.class
 telecom\entity\User_.class
 telecom\desk\swing\table\CellStatus.class
 telecom\entity\Informationabouttheequipment.class
-.netbeans_automatic_build
 telecom\desk\swing\LPanelTriangle.class
 telecom\desk\swing\message\Background.class
 telecom\desk\authorization\authorization$1.class
