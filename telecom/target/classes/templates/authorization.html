@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}"/>
+  <title th:text="${title}"/> 
+  
+</head>
+<body>
+  <!-- Голова -->
+  
+  <header th:insert="fragments/header :: header"></header>
+
+
+  <!-- Основа -->
+  <main>
+    <section class = "login">
+      <div class="container authorization flex">
+          <h1>Войдите в личный кабинет</h1>
+          <h2>Чтобы войти введите номер вашего счета и пароль</h2>
+          <form action="">
+            <p>Номер счета</p>
+            <input type="text" name="" value="">
+            <p>Пароль</p>
+            <input type="password" name="" value="">
+            <a href="">Войти</a>
+          </form>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Ноги -->
+  <footer class="fix">
+<div class="container footer">
+  <h2>У нас нету прав :(</h2>
+</div>
+  </footer>
+</body>
+</html>

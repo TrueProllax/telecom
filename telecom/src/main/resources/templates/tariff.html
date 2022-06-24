@@ -1,0 +1,64 @@
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}"/>
+  <title th:text="${title}"/>
+</head>
+<body>
+  <!-- Голова -->
+  
+  <header th:insert="fragments/header :: header"></header>
+
+
+  <!-- Основа -->
+  <main>
+    <section>
+      <div class="container tariff">
+        <h1>Тарифы</h1>
+        <ul>
+          <li class = "blockTariff">
+            <ul>
+              <li><h2>Название тарифа</h2></li>
+              <li><p class="speedIT">Скорость инета</p></li>
+              <li><p class = "TV">TV</p></li>
+              <li><p class = "cinematins">ОнлайнКинотеатр</p></li>
+              <li><p class = "cumm">Комментарий</p></li>
+              <li><a href="connection.html">Подключить</a></li>
+            </ul>
+          </li>
+          <li class = "blockTariff">
+            <ul>
+              <li><h2>Название тарифа</h2></li>
+              <li><p class="speedIT">Скорость инета</p></li>
+              <li><p class = "TV">TV</p></li>
+              <li><p class = "cinematins">ОнлайнКинотеатр</p></li>
+              <li><p class = "cumm">Комментарий</p></li>
+              <li class ="lastLink"><a href="connection.html">Подключить</a></li>
+            </ul>
+          </li>
+            <li class = "blockTariff">
+              <ul>
+                <li><h2>Название тарифа</h2></li>
+                <li><p class="speedIT">Скорость инета</p></li>
+                <li><p class = "TV">TV</p></li>
+                <li><p class = "cinematins">ОнлайнКинотеатр</p></li>
+                <li><p class = "cumm">Комментарий</p></li>
+                <li><a href="connection.html">Подключить</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Ноги -->
+  <footer class="fix">
+<div class="container footer">
+  <h2>У нас нету прав :(</h2>
+</div>
+  </footer>
+</body>
+</html>

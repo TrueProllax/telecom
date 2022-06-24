@@ -1,0 +1,44 @@
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="../static/main.css" th:href="@{main.css}"/>
+  <title th:text="${title}"/> 
+</head>
+<body>
+
+  <!-- Голова -->
+  
+  <header th:insert="fragments/header :: header"></header>
+
+
+  <!-- Основа -->
+  <main>
+    <section>
+      <div class="container request">
+        <h1>Оставьте заявку на интересующую Вас тему</h1>
+        <form>
+          <select class="" name="">
+            <option value="">Проблемы с интернетом</option>
+            <option value="">Доступ к кинотеатру</option>
+            <option value="">Не показывают TV-каналы</option>
+            <option value="">Другое</option>
+          </select>
+          <textarea name="name" rows="8" cols="80" placeholder=" Комментарий к проблеме" maxlength="400"></textarea>
+          <input type="button" name="" value="Отправить">
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Ноги -->
+  <footer class ="fix">
+<div class="container footer">
+  <h2>У нас нету прав :(</h2>
+</div>
+  </footer>
+</body>
+</html>
